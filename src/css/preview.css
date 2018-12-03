@@ -1,0 +1,15 @@
+.preview-window {
+  width: 100%;
+}
+
+#preview {
+  width: 70%;
+  height: 500px;
+  overflow-y: auto;
+  background: rgb(214, 211, 197);
+  margin: auto;
+}
+
+#preview img {
+  width: 100px;
+}
