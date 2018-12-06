@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import marked from "marked";
+import markdown from "marked";
 
 import Editor from "./components/Editor";
 import Preview from "./components/Preview";
@@ -14,15 +14,34 @@ class App extends Component {
     super(props);
     this.state = {
       defaultImage: sanic,
-      editorText: text
+      editorText: text,
+      marked: markdown,
+      renderFunc: new markdown.Renderer()
     };
 
     this.handleInput = this.handleInput.bind(this);
+    this.makeCustomMarked = this.makeCustomMarked.bind(this);
   }
   handleInput(event) {
     this.setState({
       editorText: event.target.value
     });
+  }
+  makeCustomMarked(marked) {
+    const newMarkdown = marked;
+    const renderer = new newMarkdown.Renderer();
+    renderer.link = (href, title, text) => {
+      return `<a href="${href}" ${
+        title ? "title=" + title : ""
+      } target="_blank">${text}</a>`;
+    };
+    this.setState({
+      marked: newMarkdown,
+      renderFunc: renderer
+    });
+  }
+  componentDidMount() {
+    this.makeCustomMarked(markdown);
   }
   render() {
     return (
@@ -33,7 +52,10 @@ class App extends Component {
         />
 
         <Preview
-          markdown={marked(this.state.editorText)}
+          markdown={this.state.marked(this.state.editorText, {
+            breaks: true,
+            renderer: this.state.renderFunc
+          })}
           sanic={this.state.defaultImage}
         />
       </div>
