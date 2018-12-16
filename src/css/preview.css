@@ -1,15 +1,29 @@
 .preview-window {
-  width: 100%;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
 }
 
 #preview {
-  width: 70%;
-  height: 500px;
+  padding: 0 20px;
+  height: 300px;
   overflow-y: auto;
   background: rgb(214, 211, 197);
-  margin: auto;
 }
 
 #preview img {
   width: 100px;
+}
+
+#preview pre {
+  background: white;
+  padding: 5px;
+}
+
+#preview code {
+  background: white;
+  padding: 1px 4px 2px 4px;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: monospace;
 }

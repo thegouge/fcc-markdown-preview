@@ -1,8 +1,12 @@
 .editor-window {
-  text-align: center;
+  margin: auto;
+  width: 40%;
+  padding: 10px;
 }
 
 #editor {
-  width: 50%;
+  width: 100%;
+  margin: 0;
   height: 300px;
+  resize: none;
 }

@@ -5,7 +5,6 @@ import Editor from "./components/Editor";
 import Preview from "./components/Preview";
 
 import text from "./assets/defaultText";
-import sanic from "./assets/Sanic.jpg";
 
 import "./css/App.css";
 
@@ -13,7 +12,6 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      defaultImage: sanic,
       editorText: text,
       marked: markdown,
       renderFunc: new markdown.Renderer()
@@ -56,7 +54,6 @@ class App extends Component {
             breaks: true,
             renderer: this.state.renderFunc
           })}
-          sanic={this.state.defaultImage}
         />
       </div>
     );
