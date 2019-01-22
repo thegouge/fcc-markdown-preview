@@ -1,0 +1,20 @@
+.App {
+  background: rgb(45, 60, 104);
+  padding-top: 20px;
+}
+
+.editor-window,
+.preview-window {
+  width: 40%;
+  margin: auto;
+  border: 3px solid rgb(201, 201, 201);
+}
+
+.editor-window {
+  margin-bottom: 20px;
+  height: fit-content;
+}
+
+.preview-window {
+  width: 50%;
+}

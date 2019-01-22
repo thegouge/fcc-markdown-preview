@@ -1,12 +1,10 @@
-.editor-window {
-  margin: auto;
-  width: 40%;
-  padding: 10px;
-}
-
 #editor {
+  box-sizing: border-box;
+  padding: 10px 20px;
   width: 100%;
-  margin: 0;
   height: 300px;
+  border: 0;
   resize: none;
+  overflow-y: auto;
+  background: rgb(214, 211, 197);
 }

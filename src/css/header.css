@@ -1,13 +1,7 @@
 .header {
+  box-sizing: border-box;
   width: 100%;
-  background: black;
-  color: lightblue;
-}
-
-#editor-header {
-  width: 100%;
-}
-
-#preview-header {
-  width: 100%;
+  padding-left: 10px;
+  background: rgb(49, 49, 49);
+  color: rgb(205, 225, 231);
 }

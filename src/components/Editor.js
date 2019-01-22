@@ -5,7 +5,7 @@ import "../css/editor.css";
 const Editor = (props) => {
   return (
     <div className="editor-window">
-      <Header name="editor" />
+      <Header name="Editor" />
       <textarea
         id="editor"
         value={props.defaultText}

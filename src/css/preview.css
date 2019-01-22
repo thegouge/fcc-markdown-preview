@@ -1,12 +1,6 @@
-.preview-window {
-  width: 50%;
-  margin: auto;
-  padding: 10px;
-}
-
 #preview {
   padding: 0 20px;
-  height: 300px;
+  height: 360px;
   overflow-y: auto;
   background: rgb(214, 211, 197);
 }
