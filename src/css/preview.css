@@ -2,7 +2,9 @@
   padding: 0 20px;
   height: 360px;
   overflow-y: auto;
-  background: rgb(214, 211, 197);
+  background: rgb(214, 212, 204);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 #preview img {
@@ -20,4 +22,34 @@
   font-size: 12px;
   font-weight: bold;
   font-family: monospace;
+}
+
+#preview blockquote {
+  border-left: 5px solid rgb(28, 188, 241);
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  padding-inline-start: 20px;
+  padding-inline-end: 20px;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
+}
+
+#preview cite {
+  margin-left: 1.5em;
+}
+
+#preview table {
+  border: 3px solid black;
+  border-radius: 10px;
+  background: white;
+  padding: 5px;
+}
+
+#preview thead th {
+  border-bottom: 2px solid;
+}
+
+#preview td {
+  border: 1px solid black;
+  padding: 5px;
 }

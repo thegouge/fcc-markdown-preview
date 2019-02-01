@@ -1,11 +1,12 @@
 .App {
-  background: rgb(45, 60, 104);
+  background: rgb(57, 76, 131);
   padding-top: 20px;
 }
 
 .editor-window,
 .preview-window {
-  width: 40%;
+  box-sizing: border-box;
+  width: 50%;
   margin: auto;
   border: 3px solid rgb(201, 201, 201);
 }
@@ -16,5 +17,13 @@
 }
 
 .preview-window {
-  width: 50%;
+  width: 60%;
+}
+
+@media only screen and (max-width: 800px) {
+  .editor-window,
+  .preview-window {
+    width: 95%;
+    /* margin: 0; */
+  }
 }

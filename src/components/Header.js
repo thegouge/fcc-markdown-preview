@@ -4,7 +4,7 @@ import "../css/header.css";
 const Header = (props) => {
   return (
     <div className="header" id={props.name + "-header"}>
-      {props.name}
+      <h3>{props.name}</h3>
     </div>
   );
 };

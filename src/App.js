@@ -5,7 +5,7 @@ import Editor from "./components/Editor";
 import Preview from "./components/Preview";
 import Footer from "./components/Footer";
 
-import text from "./assets/defaultText";
+import text from "./assets/otherText";
 
 import "./css/App.css";
 
