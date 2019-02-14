@@ -4,3 +4,13 @@ footer {
   padding: 10px;
   color: white;
 }
+
+footer a {
+  text-decoration: none;
+  color: rgb(230, 55, 55);
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
